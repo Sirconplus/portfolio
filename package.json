@@ -1,0 +1,50 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "https://www.portfolio.me",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{ts,tsx,md}\" --ignore-path \".gitignore\" && eslint --fix 'src/**/*.{ts,tsx}'",
+    "lint": "prettier --check \"src/**/*.{ts,tsx,md}\" --ignore-path \".gitignore\" && eslint \"src/**/*.{ts,tsx,md}\"",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "test": "npm run type-check && npm run lint",
+    "type-check": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sirconplus/portfolio.git"
+  },
+  "author": "Rafael Höfener",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Sirconplus/portfolio.git"
+  },
+  "homepage": "https://github.com/Sirconplus/portfolio#readme",
+  "dependencies": {
+    "@emotion/react": "11.1.5",
+    "@emotion/styled": "11.1.5",
+    "emotion-reset": "3.0.0",
+    "gatsby": "2.32.8",
+    "gatsby-plugin-react-helmet": "3.10.0",
+    "gatsby-plugin-typescript": "2.12.1",
+    "react": "16.14.0",
+    "react-dom": "17.0.1",
+    "react-helmet": "6.1.0",
+    "ts-node": "9.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.53",
+    "@types/react-dom": "16.9.11",
+    "@types/react-helmet": "6.1.0",
+    "eslint": "7.20.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest-dom": "3.6.5",
+    "eslint-plugin-jsdoc": "30.5.1",
+    "eslint-plugin-prefer-arrow": "1.2.2",
+    "eslint-plugin-testing-library": "3.10.1",
+    "prettier": "2.2.1",
+    "typescript": "4.2.2"
+  }
+}
